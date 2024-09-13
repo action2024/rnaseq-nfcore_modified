@@ -61,6 +61,7 @@ process SALMON_QUANT {
     """
     salmon quant \\
         --geneMap $gtf \\
+        --numBootstraps 100 \\ 
         --threads $task.cpus \\
         --libType=$strandedness \\
         $reference \\
